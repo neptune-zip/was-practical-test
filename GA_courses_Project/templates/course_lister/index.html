@@ -1,8 +1,11 @@
 <!DOCTYPE html>
+{% load staticfiles %}
+
 <html>
 
 <head>
     <title>UofG Graduate Apprenticeship Course List</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
 </head>
 
 <body>
@@ -13,11 +16,19 @@
         <h1>{{ each_course.title }}</h1>
         <h3>Starting Date: {{ each_course.starting_date }}</h3>
         <p>{{ each_course.description }}</p>
+        <hr />
         {% endfor %}
         {% else %}
         <h1 class="errmsg">There are no courses at the moment.</h1>
         {% endif %}
     </div>
+    <footer>
+        <h2>Find additional course information on the UofG website <a
+                href="https://www.gla.ac.uk/undergraduate/degrees/softwareengineeringgraduateapprenticeship/"
+                target="_blank">here</a>.
+        </h2>
+        <p>Website created by Kyle Neil</p>
+    </footer>
 </body>
 
 </html>

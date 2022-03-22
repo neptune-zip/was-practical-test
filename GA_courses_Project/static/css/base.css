@@ -1,0 +1,24 @@
+* {
+    font-family: arial;
+}
+
+body {
+    background-color: yellow;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+footer {
+    background-color: white;
+    padding: 10px;
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+.errmsg {
+    color: red;
+}
