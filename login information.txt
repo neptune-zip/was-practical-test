@@ -1,0 +1,3 @@
+username: myusername
+password: mypassword
+email: 2718763N@student.gla.ac.uk
