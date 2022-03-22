@@ -21,5 +21,5 @@ from course_lister import views
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
-    path('course_lister/', include('course_lister.urls'))
+    path('course/', include('course_lister.urls'))
 ]
