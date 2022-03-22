@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UofG Graduate Apprenticeship Course List</title>
+</head>
+
+<body>
+    <p>The list of courses provided by the GA program:</p>
+    <div class="indent">
+        {% if course %}
+        {% for each_course in course %}
+        <h1>{{ each_course.title }}</h1>
+        <h3>Starting Date: {{ each_course.starting_date }}</h3>
+        <p>{{ each_course.description }}</p>
+        {% endfor %}
+        {% else %}
+        <h1 class="errmsg">There are no courses at the moment.</h1>
+        {% endif %}
+    </div>
+</body>
+
+</html>
